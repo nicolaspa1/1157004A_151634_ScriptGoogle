@@ -1,10 +1,10 @@
 // Nicolas Pinzon Aparicio 1151634
-function myFunction() {
-var ui=SpreadsheetApp.getUi();
-  ui.createMenu('Funciones');
+function generaGui() {
+var ui=SpreadsheetApp.getUi().createMenu("Funciones");
+  ui.addItem('Enviar Correo', 'envioCorreo').addToUi();
   ui.addItem('Enviar Correo', 'envioCorreo').addToUi();
   ui.addItem('Generar Archivo', 'generaArchivo').addToUi();
-  ui.addItem('Generar Archivo', 'generaPdf').addToUi();
+  ui.addItem('Generar PDF', 'generaPdf').addToUi();
 }
 
 function envioCorreo(){
